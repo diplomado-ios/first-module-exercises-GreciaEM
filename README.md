@@ -106,3 +106,32 @@ PrimeCalculator.calculate(upTo: 50)
 PrimeCalculator.calculate(upTo: 83)
 // [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83]
 ```
+
+## Ninth challenge
+Given an array of `people`, find the youngest, the oldest and the difference in age between them, and return their respective ages and the age difference.
+
+```swift
+struct Person {
+    let name: String
+    let age: Int
+}
+
+let son = Person(name: "Juan", age: 19)
+let daughter = Person(name: "Maria", age: 12)
+let mother = Person(name: "Benita", age: 60)
+let father = Person(name: "Camilo", age: 58)
+
+let family = [daughter, son, mother, daughter]
+
+findAgeDifference(for: family)
+// (oldest: 60, youngest: 12, ageDifference: 48)
+
+```
+
+## Tenth challenge
+Write a closure that takes an `array` of optional strings and returns a new string that is the concatenation of all the strings in the array. Remember to use the methods `map`, `filter` and `reduce` to find the solution.
+
+```swift
+let someStrings: [String?] = ["This", "is", nil, "not", nil, "a", "drill", nil, "!"]
+// This is not a drill!
+```

@@ -7,7 +7,6 @@ Print the operation according to the selected enumerator.
 
 ```swift
 operation(.addition, firstNumber: 3, secondNumber: 4) 
-
 // 7 
 ```
 
@@ -28,17 +27,16 @@ Create a function that receives an integer and prints that number multiplied fro
 
 ```swift
 multiply(number: 5)
-
-//5x1 = 5
-//5x2 = 10
-//5x3 = 15
-//5x4 =20
-//5x5 = 25
-//5x6 = 30
-//5x7 = 35
-//5x8 = 40
-//5x9 = 45
-//5x10 = 50
+// 5x1 = 5
+// 5x2 = 10
+// 5x3 = 15
+// 5x4 =20
+// 5x5 = 25
+// 5x6 = 30
+// 5x7 = 35
+// 5x8 = 40
+// 5x9 = 45
+// 5x10 = 50
 ```
 
 ## Fourth challenge
@@ -52,7 +50,7 @@ Rules:
 
 ```swift
 login(password: "pass")
-//false
+// false
 ```
 
 ## Fifth challenge
@@ -67,10 +65,16 @@ optionals(string: testString)
 ## Sixth challenge
  Given an `optional string`, print "It's empty! You ripped me off!" when it's `nil`, "Thanks for my cat Schrödinger!" if input is "🐈" and "This ain't a cat!" when none of the others.
  
- ```swift
- let testString: String? = "🐈"
- //"Thanks for my cat Schrödinger!"
- ```
+```swift
+receiveBox(with: "🐈")
+// "Thanks for my cat Schrödinger!"
+ 
+receiveBox(with: nil)
+// "It's empty! You ripped me off!"
+
+receiveBox(with: "lol")
+// "This ain't a cat!"
+```
 
 
 ## Seventh challenge
@@ -81,7 +85,6 @@ Keep the same snakes/ladders values and positions.
 ```swift
 let rolls = [2,3,5,6,5,4]
 game(diceRolls: rolls)
-
 // 24
 ```
 
@@ -96,4 +99,10 @@ Implement the _Sieve of Eratosthenes_ algorithm in Swift from the provided unit 
 ```swift
 PrimeCalculator.calculate(upTo: 10)
 // [2,3,5,7]
+
+PrimeCalculator.calculate(upTo: 50)
+// [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47]
+
+PrimeCalculator.calculate(upTo: 83)
+// [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83]
 ```
